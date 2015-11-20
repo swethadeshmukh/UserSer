@@ -1,0 +1,84 @@
+<h2>Details</h2>
+<div class="well">
+<form name="detailsform" novalidate>
+    <table class="table table-striped">
+        <tr>
+            <td>
+                User Id::
+            </td>
+            <td>
+                <input type="text" id="id"  ng-model="UserId" required>
+                <span style="color:red" ng-show="detailsform.id.$dirty && detailsform.id.$invalid">
+                    <span style="color:red" ng-show="detailsform.id.$error.required">User Id is Required</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                First Name::
+            </td>
+            <td>
+                <input type="text" id="firstName" ng-model="Firstname" required>
+                <span style="color:red" ng-show="detailsform.firstName.$dirty && detailsform.firstName.$invalid">
+                    <span style="color:red" ng-show="detailsform.firstName.$error.required">First Name is Required</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last Name::
+            </td>
+            <td>
+                <input type="text" id="lastName" ng-model="Lastname" required>
+                <span style="color:red" ng-show="detailsform.lastName.$dirty && detailsform.lastName.$invalid">
+                    <span style="color:red" ng-show="detailsform.lastName.$error.required">Last Name is Required</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email::
+            </td>
+            <td>
+                <input type="text" id="email" ng-model="Email" required>
+                <span style="color:red" ng-show="detailsform.email.$dirty && detailsform.email.$invalid">
+                    <span style="color:red" ng-show="detailsform.email.$error.required">Email Name is Required</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Title::
+            </td>
+            <td>
+                <input type="text" id="title" ng-model="Title" required>
+                <span style="color:red" ng-show="detailsform.title.$dirty && detailsform.title.$invalid">
+                    <span style="color:red" ng-show="detailsform.title.$error.required">Title Name is Required</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone::
+            </td>
+            <td>
+                <input type="text" id="phone" ng-model="Phone" required>
+                <span style="color:red" ng-show="detailsform.phone.$dirty && detailsform.phone.$invalid">
+                    <span style="color:red" ng-show="detailsform.phone.$error.required">Phone Name is Required</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                IsActive::
+            </td>
+            <td>
+                <input type="text" id="isactive" ng-model="IsActive" required>
+                <span style="color:red" ng-show="detailsform.isactive.$dirty && detailsform.isactive.$invalid">
+                    <span style="color:red" ng-show="detailsform.isactive.$error.required">IsActive Name is Required</span>
+                </span>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>

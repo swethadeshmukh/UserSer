@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="usdApp">
+<head >
+    <meta charset="UTF-8">
+    <title>Users Management</title>
+    <style type="text/css">.well{background-color: aqua}</style>
+    <link rel="stylesheet" type="text/css" href="Themes/bootstrap.min.css">
+
+
+</head>
+<body>
+
+<div ng-view></div>
+
+<div class="well" ng-controller="userController" >
+    Search User by Last Name:<input type="text" ng-model="lname"><br>
+<table class="table table-striped" >
+    <tr>
+        <td>
+            User ID
+        </td>
+        <td>
+            First Name
+        </td>
+        <td>
+            Last Name
+        </td>
+        <td>
+            Email
+        </td>
+        <td>
+            Title
+        </td>
+        <td>
+            Phone
+        </td>
+        <td>
+            IsEnabled
+        </td>
+    </tr>
+    <tr ng-repeat="user in users|filter:lname">
+        <td ng-model="Id">{{user.UserId}}</td>
+        <td ng-model="FirstName">{{user.FirstName}}</td>
+        <td ng-model="LastName">{{user.LastName}}</td>
+        <td ng-model="Email">{{user.Email}}</td>
+        <td ng-model="Title">{{user.Title}}</td>
+        <td ng-model="Phone">{{user.Phone}}</td>
+        <td ng-model="IsActive">{{user.IsEnabled}}</td>
+        <td><a href="#details/{{user.UserId}}">Details</a></td>
+        <td><a href="#add/{{user.UserId}}">Add</a></td>
+        <td><a href="#delete/{{user.UserId}}">Delete</a></td>
+    </tr>
+</table>
+</div>
+
+<div>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+<script src="Scripts/Default/jquery-2.1.4.min.js"></script>
+<script src="Scripts/Default/bootstrap.min.js"></script>
+<script type="text/javascript" src="Scripts/Modules/usdModule.js"></script>
+<script type="text/javascript" src="Model/userDefinedService.js"></script>
+<script type="text/javascript" src="Scripts/ControllerDefinitions/udsControllerDefinition.js"></script>
+<script type="text/javascript" src="Scripts/Controllers/udsController.js"></script>
+<script type="text/javascript" src="Scripts/Config/usdConfig.js"></script>
+
+
+
+</body>
+</html>

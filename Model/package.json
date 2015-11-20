@@ -1,0 +1,7 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "userList":[{"userId":5,"firstName":"David","lastName":"Holcomb","email":"david.holcomb@etscheckmail.com","title":"Vice President ops NAFO","phone":"","isEnable":1},
+              {"userId":5,"firstName":"David","lastName":"Holcomb","email":"david.holcomb@etscheckmail.com","title":"Vice President ops NAFO","phone":"","isEnable":1}]
+
+}
